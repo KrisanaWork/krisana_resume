@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/navbar";
 import Hero from "@/components/sections/hero";
 import Projects from "@/components/sections/project";
+import Experience from "@/components/sections/experience";
 import Skills from "@/components/sections/skills";
 
 export default function HomePage() {
@@ -9,6 +10,7 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <Projects />
+      <Experience />
       <Skills />
     </main>
   );

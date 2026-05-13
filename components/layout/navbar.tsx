@@ -28,6 +28,13 @@ export default function Navbar() {
           </Link>
 
           <Link
+            href="#experience"
+            className="text-sm text-zinc-600 transition hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white"
+          >
+            Experience
+          </Link>
+
+          <Link
             href="#skills"
             className="text-sm text-zinc-600 transition hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white"
           >
@@ -47,11 +54,7 @@ export default function Navbar() {
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-200 bg-white text-zinc-700 transition hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300 dark:hover:bg-zinc-900"
           >
-            {theme === "dark" ? (
-              <Sun size={16} />
-            ) : (
-              <Moon size={16} />
-            )}
+            {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
           </button>
         </nav>
       </div>

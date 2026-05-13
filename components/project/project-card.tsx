@@ -53,7 +53,7 @@ export default function ProjectCard({
   restricted,
 }: ProjectCardProps) {
   return (
-    <article className="group overflow-hidden rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white shadow-sm dark:bg-zinc-950/60 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-zinc-300 dark:hover:border-zinc-700">
+    <article className="group overflow-hidden rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white shadow-sm hover:shadow-lg dark:bg-zinc-950/60 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-zinc-300 dark:hover:border-zinc-700">
       <div className="relative aspect-video overflow-hidden border-b border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900">
         <Image
           src={image}
@@ -131,18 +131,14 @@ export default function ProjectCard({
           </div>
 
           <div className="flex items-center gap-3">
-            {demo && !restricted && (
+            {demo && (
               <a
                 href={demo}
                 target="_blank"
-                className="rounded-xl border border-zinc-700 px-4 py-2 text-sm text-zinc-950 dark:text-white transition hover:bg-zinc-100 dark:bg-zinc-900"
+                className="rounded-xl border border-zinc-300 px-4 py-2 text-sm text-zinc-900 transition hover:bg-zinc-100 dark:border-zinc-700 dark:text-white dark:hover:bg-zinc-900"
               >
-                Live Demo
+                {restricted ? "Login Required" : "Live Demo"}
               </a>
-            )}
-
-            {restricted && (
-              <span className="text-sm text-zinc-500">Restricted Access</span>
             )}
           </div>
         </div>

@@ -14,8 +14,9 @@ export default function Hero() {
         </h1>
 
         <p className="max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-          Building scalable and responsive web applications with Next.js,
-          TypeScript, and modern frontend technologies.
+          Frontend-focused developer with experience building operational web
+          applications and actively learning modern frontend technologies
+          including Next.js, React, and TypeScript.
         </p>
 
         <div className="mt-10 flex gap-4">

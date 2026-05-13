@@ -27,7 +27,6 @@ export const projects = [
     ],
     company: "MARDSS Chi and Mun River Basin Project",
     status: "Production",
-    github: "",
     demo: "https://mardss.kku.ac.th/",
     restricted: false,
   },
@@ -51,11 +50,13 @@ export const projects = [
     ],
     company: "Survey and GIS Ltd. Part.",
     status: "Production",
+    demo: "https://www.surveygis39.com/sw/",
     deployments: ["Implemented for 3 local government organizations"],
     restricted: true,
   },
   {
     slug: "e-document-management-system",
+    featured: true,
     period: "2025 - Present",
     title: "E-Document Management System",
     shortDescription:
@@ -73,9 +74,8 @@ export const projects = [
       "Collaborated with stakeholders to improve workflow efficiency",
     ],
     company: "Survey and GIS Ltd. Part.",
-    status: "Internal Deployment",
-    github: "",
-    demo: "",
+    status: "Production",
+    demo: "https://www.surveygis39.com/edoc/",
     restricted: true,
   },
 ];
