@@ -3,6 +3,8 @@ import Hero from "@/components/sections/hero";
 import Projects from "@/components/sections/project";
 import Experience from "@/components/sections/experience";
 import Skills from "@/components/sections/skills";
+import Contact from "@/components/sections/contact";
+import Footer from "@/components/layout/footer";
 
 export default function HomePage() {
   return (
@@ -12,6 +14,8 @@ export default function HomePage() {
       <Projects />
       <Experience />
       <Skills />
+      <Contact />
+      <Footer />
     </main>
   );
 }
