@@ -1,23 +1,31 @@
+import FadeIn from "@/components/animations/fade-in";
+
 export default function Hero() {
   return (
     <section className="mx-auto grid max-w-7xl gap-16 px-6 py-24 lg:grid-cols-2 lg:items-center">
       {/* LEFT CONTENT */}
       <div>
-        <p className="mb-4 font-mono text-zinc-600 dark:text-zinc-400">
-          Frontend Developer
-        </p>
+        <FadeIn delay={0.1}>
+          <p className="mb-4 font-mono text-zinc-600 dark:text-zinc-400">
+            Frontend Developer
+          </p>
+        </FadeIn>
 
-        <h1 className="mb-6 text-5xl font-bold leading-tight text-zinc-950 dark:text-white md:text-7xl">
-          Krisana
-          <br />
-          Sangkawanna
-        </h1>
+        <FadeIn delay={0.2}>
+          <h1 className="mb-6 text-5xl font-bold leading-tight text-zinc-950 dark:text-white md:text-7xl">
+            Krisana
+            <br />
+            Sangkawanna
+          </h1>
+        </FadeIn>
 
-        <p className="max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-          Frontend-focused developer with experience building operational web
-          applications and actively learning modern frontend technologies
-          including Next.js, React, and TypeScript.
-        </p>
+        <FadeIn delay={0.3}>
+          <p className="max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+            Frontend-focused developer with experience building operational web
+            applications and actively learning modern frontend technologies
+            including Next.js, React, and TypeScript.
+          </p>
+        </FadeIn>
 
         <div className="mt-10 flex gap-4">
           <a

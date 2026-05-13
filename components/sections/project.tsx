@@ -1,5 +1,6 @@
 import ProjectCard from "@/components/project/project-card";
 import { projects } from "@/data/projects";
+import FadeIn from "@/components/animations/fade-in";
 
 export default function Projects() {
   return (
@@ -23,21 +24,23 @@ export default function Projects() {
       </div>
 
       <div className="grid gap-8 lg:grid-cols-2">
-        {projects.map((project) => (
-          <ProjectCard
-            key={project.slug}
-            featured={project.featured}
-            period={project.period}
-            title={project.title}
-            shortDescription={project.shortDescription}
-            image={project.image}
-            tech={project.tech}
-            role={project.role}
-            company={project.company}
-            status={project.status}
-            demo={project.demo}
-            restricted={project.restricted}
-          />
+        {projects.map((project, index) => (
+          <FadeIn key={project.slug} delay={index * 0.1}>
+            <ProjectCard
+              key={project.slug}
+              featured={project.featured}
+              period={project.period}
+              title={project.title}
+              shortDescription={project.shortDescription}
+              image={project.image}
+              tech={project.tech}
+              role={project.role}
+              company={project.company}
+              status={project.status}
+              demo={project.demo}
+              restricted={project.restricted}
+            />
+          </FadeIn>
         ))}
       </div>
     </section>

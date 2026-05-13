@@ -53,7 +53,7 @@ export default function ProjectCard({
   restricted,
 }: ProjectCardProps) {
   return (
-    <article className="group overflow-hidden rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white shadow-sm hover:shadow-lg dark:bg-zinc-950/60 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-zinc-300 dark:hover:border-zinc-700">
+    <article className="group overflow-hidden rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white shadow-sm hover:shadow-xl dark:bg-zinc-950/60 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-zinc-300 dark:hover:border-zinc-700">
       <div className="relative aspect-video overflow-hidden border-b border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900">
         <Image
           src={image}

@@ -1,5 +1,6 @@
 import SkillCard from "@/components/skill/skill-card";
 import { skills } from "@/data/skills";
+import FadeIn from "@/components/animations/fade-in";
 
 export default function Skills() {
   return (
@@ -23,12 +24,14 @@ export default function Skills() {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
-        {skills.map((skill) => (
-          <SkillCard
-            key={skill.category}
-            category={skill.category}
-            items={skill.items}
-          />
+        {skills.map((skill, index) => (
+          <FadeIn key={skill.category} delay={index * 0.1}>
+            <SkillCard
+              key={skill.category}
+              category={skill.category}
+              items={skill.items}
+            />
+          </FadeIn>
         ))}
       </div>
     </section>

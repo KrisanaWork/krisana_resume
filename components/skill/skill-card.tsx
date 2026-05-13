@@ -50,11 +50,14 @@ const techIcons = {
 export default function SkillCard({ category, items }: SkillCardProps) {
   return (
     <div className="rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950/60 shadow-sm p-6">
-      <h3 className="text-xl font-semibold text-zinc-950 dark:text-white">{category}</h3>
+      <h3 className="text-xl font-semibold text-zinc-950 dark:text-white">
+        {category}
+      </h3>
 
       <div className="mt-6 flex flex-wrap gap-3">
         {items.map((item) => {
           const Icon = techIcons[item as keyof typeof techIcons];
+
           return (
             <span
               key={item}
