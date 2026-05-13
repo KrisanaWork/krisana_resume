@@ -1,0 +1,81 @@
+export const projects = [
+  {
+    slug: "groundwater-decision-support-platform",
+    featured: true,
+    period: "2024 - Present",
+    title: "Groundwater Decision Support Platform",
+    shortDescription:
+      "Web-based decision support platform for groundwater recharge analysis and spatial data visualization.",
+    description:
+      "Developed and modernized a regional groundwater management platform with responsive UI architecture, spatial visualization capabilities, and integrated Web GIS workflows for environmental analysis and decision support.",
+    image: "/images/projects/water-management-system.png",
+    tech: [
+      "PHP",
+      "JavaScript",
+      "Tailwind CSS",
+      "Bootstrap",
+      "PostgreSQL",
+      "Leaflet.js",
+    ],
+    role: "Full Stack Developer",
+    responsibilities: [
+      "Redesigned and modernized the frontend interface using Tailwind CSS",
+      "Visualized 65+ spatial data layers for hydrological and geological analysis",
+      "Integrated Web GIS functionalities using Leaflet and PostGIS",
+      "Built responsive UI workflows for environmental data exploration",
+      "Streamlined local development and deployment workflows with Docker",
+    ],
+    company: "MARDSS Chi and Mun River Basin Project",
+    status: "Production",
+    github: "",
+    demo: "https://mardss.kku.ac.th/",
+    restricted: false,
+  },
+  {
+    slug: "utility-billing-management-system",
+    featured: true,
+    period: "2024 - 2025",
+    title: "Utility Billing & Collection Management System",
+    shortDescription:
+      "Operational billing platform for municipal water and waste collection services.",
+    description:
+      "Developed a utility billing and collection management platform supporting water billing, waste collection workflows, QR payments, and handheld POS integrations for local government organizations.",
+    image: "/images/projects/billing-management-system.png",
+    tech: ["PHP", "MySQL", "JavaScript", "REST API", "Leaflet.js"],
+    role: "Full Stack Developer",
+    responsibilities: [
+      "Built billing and payment workflows",
+      "Integrated QR code payment systems",
+      "Connected handheld POS devices and portable printers",
+      "Maintained production reliability for operational usage",
+    ],
+    company: "Survey and GIS Ltd. Part.",
+    status: "Production",
+    deployments: ["Implemented for 3 local government organizations"],
+    restricted: true,
+  },
+  {
+    slug: "e-document-management-system",
+    period: "2025 - Present",
+    title: "E-Document Management System",
+    shortDescription:
+      "Digital document workflow system for internal government operations.",
+    description:
+      "Developed and deployed an electronic document management system to streamline document workflows, improve operational efficiency, and support internal administrative processes for government organizations.",
+    image: "/images/projects/e-document-system.png",
+    tech: ["PHP", "MySQL", "JavaScript"],
+    role: "Full Stack Developer",
+    responsibilities: [
+      "Developed internal document workflow features",
+      "Gathered and translated client requirements into technical solutions",
+      "Deployed production systems for operational usage",
+      "Conducted user training sessions for government officers",
+      "Collaborated with stakeholders to improve workflow efficiency",
+    ],
+    company: "Survey and GIS Ltd. Part.",
+    status: "Internal Deployment",
+    github: "",
+    demo: "",
+    restricted: true,
+  },
+];
