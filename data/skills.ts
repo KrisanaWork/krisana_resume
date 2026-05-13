@@ -1,6 +1,6 @@
 export const skills = [
   {
-    category: "Frontend",
+    category: "Frontend Engineering",
     items: [
       "Next.js",
       "React",
@@ -8,22 +8,24 @@ export const skills = [
       "JavaScript",
       "Tailwind CSS",
       "Bootstrap",
-      "MapLibre GL JS",
-      "Leaflet.js",
       "HTML",
       "CSS",
     ],
   },
   {
-    category: "Backend",
-    items: ["Node.js", "Express.js", "PHP", "REST API", "Prisma"],
+    category: "UI & Visualization Systems",
+    items: ["MapLibre GL JS", "Leaflet.js"],
   },
   {
-    category: "Database",
+    category: "Backend & API Integration",
+    items: ["Node.js", "Express.js", "PHP", "REST API"],
+  },
+  {
+    category: "Data & Spatial Systems",
     items: ["PostgreSQL", "PostGIS", "MySQL"],
   },
   {
-    category: "Tools",
+    category: "Development Workflow",
     items: ["Docker", "Git", "Postman"],
   },
 ];

@@ -49,23 +49,26 @@ const techIcons = {
 
 export default function SkillCard({ category, items }: SkillCardProps) {
   return (
-    <div className="rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950/60 shadow-sm p-6">
-      <h3 className="text-xl font-semibold text-zinc-950 dark:text-white">
+    <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
+      {/* HEADER */}
+      <h3 className="text-sm font-mono uppercase tracking-[0.2em] text-zinc-500">
         {category}
       </h3>
 
-      <div className="mt-6 flex flex-wrap gap-3">
+      {/* ITEMS */}
+      <div className="mt-5 flex flex-wrap gap-2">
         {items.map((item) => {
           const Icon = techIcons[item as keyof typeof techIcons];
 
           return (
             <span
               key={item}
-              className="flex items-center gap-3 rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-900 px-3 py-2 text-sm text-zinc-700 dark:text-zinc-300"
+              className="flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300"
             >
               {Icon && (
-                <Icon size={14} className="text-zinc-500 dark:text-zinc-400" />
+                <Icon size={12} className="text-zinc-500 dark:text-zinc-400" />
               )}
+
               <span className="font-mono">{item}</span>
             </span>
           );

@@ -8,14 +8,18 @@ import Footer from "@/components/layout/footer";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-stone-100 text-black transition-colors duration-300 dark:bg-black dark:text-white">
+    <main className="min-h-screen bg-white text-zinc-900 antialiased dark:bg-black dark:text-zinc-100">
       <Navbar />
-      <Hero />
-      <Projects />
-      <Experience />
-      <Skills />
-      <Contact />
-      <Footer />
+
+      <div className="mx-auto max-w-6xl px-6">
+        {/* spacing system = Apple style rhythm */}
+        <Hero />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Contact />
+        <Footer />
+      </div>
     </main>
   );
 }
