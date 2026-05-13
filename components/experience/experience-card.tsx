@@ -18,7 +18,7 @@ export default function ExperienceCard({
   selfLearning,
 }: ExperienceCardProps) {
   return (
-    <article className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm transtion hover:shadow-md dark:border-zinc-800 dark:bg-zinc950">
+    <article className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm transition hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
       {/* Header */}
       <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
         <div>
@@ -47,9 +47,10 @@ export default function ExperienceCard({
           {responsibilities.map((item) => (
             <li
               key={item}
-              className="flex items-center gap-3 text-zinc-700 dark:text-zinc-300"
+              className="flex items-start gap-3 text-zinc-700 dark:text-zinc-300"
             >
               <span className="mt-2 h-2 w-2 rounded-full bg-zinc-400" />
+
               <span className="leading-relaxed">{item}</span>
             </li>
           ))}
